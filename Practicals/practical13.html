@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Practical</title>
+    <style>
+            *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      body{
+          /* height: 100vh; */
+          /* width: 100%; */
+          display: block;
+          /* margin: auto; */
+          /* align-items: center; */
+      }
+      .container{
+          /* margin-left: 100px;
+          margin-right: 100px;
+          margin-top: 40px; */
+          margin:20px 100px;
+          border: 2px solid black;
+          border-radius: 10px;
+      }
+      table{
+          border-spacing: 0;
+          border-collapse: collapse;
+          text-align: left;
+      }
+      th{
+          text-align: left;
+      }
+      caption{
+          background-color: white;
+          padding: 12px;
+          color: black;
+          font-weight: bold;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+      }
+      th,tr,td{
+          padding: 8px;
+      }
+      a{
+          text-decoration: none;
+          color: gray;
+      }
+      a:hover{
+          color: rgb(47, 47, 194);
+          
+      }
+      .icon{
+          color: rgb(135, 2, 175);
+      }
+      .icon .edit:hover{
+          color: rgb(28, 211, 28);
+          cursor: pointer;
+      }
+      .icon .delete:hover{
+          color:red;
+          cursor: pointer;
+      }
+      tbody tr{
+        text-align: center;
+      }
+
+      tbody td {
+          height: 50px;
+          border-left: 2px solid #ddd;
+      }
+      tbody th {
+          border-bottom: 3px solid #ddd;
+          height: 45px;
+          align-items: center;
+          justify-content: center;
+      }
+      .color1{
+          background-color: rgb(192, 214, 94);
+      }
+      .color2{
+          background-color: rgb(110, 197, 110);
+      }
+      .color3{
+          background-color: rgb(29, 172, 160);
+      }
+      .color4{
+          background-color: rgb(92, 143, 156);
+      }
+      .color5{
+          background-color: rgb(205, 218, 151);
+      }
+      .color6{
+        background-color: rgb(151, 209, 151);
+      }
+      .color7{
+        background-color: rgb(139, 199, 194);
+      }
+      .color8{
+        background-color: rgb(176, 218, 230);
+      }
+      td.green{
+          color: green;
+      }
+
+      td.red{
+          color: red;
+      }
+      button {
+    height: 35px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: purple;
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table style="width: 100%;">
+            <thead><caption>SELECT YOUR PLAN</caption></thead>
+            <tbody>
+                <tr>
+                    <td width="25%" class="color1"><i title="check" class="material-icons button check">check</i>Basic</td>
+                    <td width="25%" class="color2"><i title="check" class="material-icons button check">check</i>Plus</td>
+                    <td width="25%" class="color3"><i title="check" class="material-icons button check">check</i>Deluxe</td>
+                    <td width="25%" class="color4"><i title="check" class="material-icons button check">check</i>Pro</td>
+                </tr>
+                <tr>
+                    <td class="green color5">Rs. 500/_</td>
+                    <td class="green color6">Rs. 1500/_</td>
+                    <td class="green color7">Rs. 2500/_</td>
+                    <td class="green color8">Rs. 3500/_</td>
+                </tr>
+                <tr>
+                    <td class="color1">50 pages</td>
+                    <td class="color2">75 pages</td>
+                    <td class="color3">Unlimited</td>
+                    <td class="color4">Unlimited</td>
+                </tr>
+                <tr>
+                    <td class="color5">3 Users</td>
+                    <td class="color6">5 Users</td>
+                    <td class="color7">10 Users</td>
+                    <td class="color8">Unlimited</td>
+                </tr>
+                <tr>
+                    <td class="color1">10 Sites</td>
+                    <td class="color2">25 Sites</td>
+                    <td class="color3">100 Sites</td>
+                    <td class="color4">Unlimited</td>
+                </tr>
+                <tr>
+                    <td class="color5">50 MB</td>
+                    <td class="color6">250 MB</td>
+                    <td class="color7">1 GB</td>
+                    <td class="color8">5 GB</td>
+                </tr>
+                <tr>
+                    <td class="color1">included</td>
+                    <td class="color2">included</td>
+                    <td class="color3">included</td>
+                    <td class="color4">included</td>
+                </tr>
+                <tr>
+
+                    <td class="green color5"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color6"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color7"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color8"><i title="check" class="material-icons button check">check</i></td>
+
+                </tr>
+                <tr>
+                    <td class="red color1"><span>&#10006;</span></td>
+                    <td class="green color2"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color3"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color4"><i title="check" class="material-icons button check">check</i></td>
+                </tr>
+                
+                <tr>
+                    <td class="red color5"><span>&#10006;</span></td>
+                    <td class="green color6"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color7"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color8"><i title="check" class="material-icons button check">check</i></td>
+                </tr>
+
+                <tr>
+                    <td class="red color1"><span>&#10006;</span></td>
+                    <td class="red color2"><span>&#10006;</span></td>
+                    <td class="green color3"><i title="check" class="material-icons button check">check</i></td>
+                    <td class="green color4"><i title="check" class="material-icons button check">check</i></td>
+                </tr>
+
+                <tr>
+                    <td class="red color5"><span>&#10006;</span></td>
+                    <td class="red color6"><span>&#10006;</span></td>
+                    <td class="red color7"><span>&#10006;</span></td>
+                    <td class="green color8"><i title="check" class="material-icons button check">check</i></td>
+                </tr>
+                <tr class="color design">
+                    <td class="color1"><button>Sign Up</button></td>
+                    <td class="color2"><button>Sign Up</button></td>
+                    <td class="color3"><button>Sign Up</button></td>
+                    <td class="color4"><button>Sign Up</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

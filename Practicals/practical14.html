@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            padding: auto;
+            background: gray;
+        }
+        .container {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            text-align: center;
+        }
+        .counter {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: aliceblue;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3{
+            font-size: 40px;
+            color: yellow;
+        }
+        button{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+        }
+        .counter > button {
+            margin: 10px;
+            font-size: 30px;
+            padding: 5px;
+        }
+        h3 {
+            font-size: 30px;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practical 14</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>counter</h1>
+      <div class="counter">
+        <button id="minus" onclick="decrement()">
+          <i class="fa fa-minus" aria-hidden="true">-</i>
+        </button>
+        <h3 id="counterValue">0</h3>
+        <button id="plus" onclick="increment()">
+          <i class="fa fa-plus" aria-hidden="true">+</i>
+        </button>
+      </div>
+      <script>
+        var count = 0;
+        var valueChange = document.getElementById("counterValue");
+
+        window.onload = () => {
+        if (count === 0) {
+            var bt = document.querySelector("button");
+            bt.disabled = true;
+        } else {
+            var bt = document.querySelector("button");
+            bt.disabled = false;
+        }
+        };
+
+        function increment() {
+        if (count === 0) {
+            var bt = document.querySelector("button");
+            bt.disabled = true;
+        } else {
+            var bt = document.querySelector("button");
+            bt.disabled = false;
+        }
+        valueChange.innerHTML = count++;
+        }
+
+        function decrement() {
+        count--;
+        if (count === 0) {
+            var bt = document.querySelector("button");
+            bt.disabled = true;
+        } else {
+            var bt = document.querySelector("button");
+            bt.disabled = false;
+        }
+        valueChange.innerHTML = count;
+        }
+    </script>
+     
+    </div>
+  </body>
+</html>
